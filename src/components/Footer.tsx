@@ -1,5 +1,6 @@
 ﻿import { Link } from 'react-router-dom'
 import { MessageCircle, Instagram, Facebook, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react'
+import { scrollToSection } from '../utils/scrollTo'
 
 type FooterLink = { label: string; href: string; isRoute?: boolean }
 
@@ -31,11 +32,6 @@ const socials = [
 ]
 
 export default function Footer() {
-  const scrollToSection = (href: string) => {
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <footer className="bg-[#030303] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

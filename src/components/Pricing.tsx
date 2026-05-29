@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Check, Zap, Building2, Star, ArrowRight } from 'lucide-react'
+import { scrollToSection } from '../utils/scrollTo'
 
 const plans = [
   {
@@ -181,7 +182,7 @@ export default function Pricing() {
                 {/* CTA */}
                 <a
                   href="#contact"
-                  onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
+                  onClick={(e) => { e.preventDefault(); scrollToSection('#contact') }}
                   className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-2xl text-sm font-bold transition-all hover:scale-105 ${plan.ctaStyle}`}
                 >
                   {plan.cta}

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { MessageCircle, BarChart3, MapPin, Star, ArrowRight, Check } from 'lucide-react'
+import { scrollToSection } from '../utils/scrollTo'
 
 const services = [
   {
@@ -147,7 +148,7 @@ export default function Services() {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault()
-                    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+                    scrollToSection('#contact')
                   }}
                   className="flex items-center gap-2 text-sm font-semibold text-white/60 group-hover:text-white transition-colors"
                 >

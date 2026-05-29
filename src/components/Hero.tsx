@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { ArrowRight, Check, MessageCircle, TrendingUp, Star, Zap } from 'lucide-react'
+import { scrollToSection } from '../utils/scrollTo'
 
 const floatingStats = [
   { icon: MessageCircle, label: '500K+ Messages', color: 'text-green-400', bg: 'bg-green-400/10' },
@@ -149,10 +150,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
-                }}
+                onClick={(e) => { e.preventDefault(); scrollToSection('#contact') }}
                 className="group flex items-center gap-2 px-7 py-4 rounded-2xl bg-gradient-to-r from-brand-purple to-brand-blue text-white font-bold text-base hover:opacity-90 transition-all hover:scale-105 shadow-glow-purple"
               >
                 Book Free Demo

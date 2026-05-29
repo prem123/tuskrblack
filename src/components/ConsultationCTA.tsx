@@ -1,5 +1,6 @@
 ﻿import { motion } from 'framer-motion'
 import { MessageCircle, ArrowRight, Check, Phone, Clock, Star, Mail } from 'lucide-react'
+import { scrollToSection } from '../utils/scrollTo'
 
 const perks = [
   'Free strategy session — no sales pressure',
@@ -142,7 +143,7 @@ export default function ConsultationCTA() {
                   const handleClick = isAnchor
                     ? (e: React.MouseEvent) => {
                         e.preventDefault()
-                        document.querySelector(ch.href)?.scrollIntoView({ behavior: 'smooth' })
+                        scrollToSection(ch.href)
                       }
                     : undefined
 
@@ -225,7 +226,7 @@ function QuickForm() {
     <form
       onSubmit={(e) => {
         e.preventDefault()
-        document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+        scrollToSection('#contact')
       }}
       className="flex flex-col sm:flex-row gap-2"
     >
