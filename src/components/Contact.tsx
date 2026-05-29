@@ -22,8 +22,17 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // In production, connect to your CRM / backend
-    console.log('Form submitted:', form)
+    const msg = [
+      `👋 *New Consultation Request*`,
+      ``,
+      `*Name:* ${form.name}`,
+      `*Business:* ${form.business}`,
+      `*Phone/WhatsApp:* ${form.phone}`,
+      `*Email:* ${form.email}`,
+      form.service ? `*Service:* ${form.service}` : null,
+      form.message ? `*Message:* ${form.message}` : null,
+    ].filter(Boolean).join('\n')
+    window.open(`https://wa.me/919606767809?text=${encodeURIComponent(msg)}`, '_blank')
     setSubmitted(true)
   }
 

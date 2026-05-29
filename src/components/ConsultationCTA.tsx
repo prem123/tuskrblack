@@ -1,4 +1,5 @@
-﻿import { motion } from 'framer-motion'
+﻿import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { MessageCircle, ArrowRight, Check, Phone, Clock, Star, Mail } from 'lucide-react'
 import { scrollToSection } from '../utils/scrollTo'
 
@@ -222,18 +223,22 @@ export default function ConsultationCTA() {
 }
 
 function QuickForm() {
+  const [phone, setPhone] = useState('')
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const msg = `👋 Hi Tuskr Black, I'd like to book a free consultation.\n\n*My WhatsApp number:* ${phone}`
+    window.open(`https://wa.me/919606767809?text=${encodeURIComponent(msg)}`, '_blank')
+  }
+
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault()
-        scrollToSection('#contact')
-      }}
-      className="flex flex-col sm:flex-row gap-2"
-    >
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
       <input
         type="tel"
         placeholder="Your WhatsApp number"
         required
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
         className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-brand-blue/50 transition-colors"
       />
       <button
