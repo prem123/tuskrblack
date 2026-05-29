@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#050505] text-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0a0a0a];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-purple rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-blue;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-white {
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    border: 1px solid transparent;
+    background: linear-gradient(#050505, #050505) padding-box,
+                linear-gradient(135deg, #7C3AED, #3B82F6) border-box;
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.2), 0 0 120px rgba(59, 130, 246, 0.1);
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
+
+/* Gradient backgrounds */
+.hero-gradient {
+  background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.2) 0%, transparent 60%),
+              radial-gradient(ellipse at 100% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+              #0a0a0a;
+}
+
+.section-gradient {
+  background: radial-gradient(ellipse at 0% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 60%),
+              #050505;
+}
+
+/* Animated gradient border */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-border {
+  background: linear-gradient(270deg, #7C3AED, #3B82F6, #7C3AED);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* WhatsApp green color */
+.whatsapp-green {
+  color: #25D366;
+}
+
+.bg-whatsapp {
+  background-color: #25D366;
+}
