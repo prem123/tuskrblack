@@ -27,7 +27,7 @@ export default function Navbar() {
   const handleNavClick = (href: string) => {
     setMobileOpen(false)
     if (!isHome) return
-    scrollToSection(href)
+    setTimeout(() => scrollToSection(href), 300)
   }
 
   return (
