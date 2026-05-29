@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="space-y-2.5">
               {[
                 { icon: Mail, value: 'contact@tuskrblack.in', href: 'mailto:contact@tuskrblack.in' },
-                { icon: Phone, value: '+91 99999 99999', href: 'tel:+919999999999' },
+                { icon: Phone, value: '+91 96067 67809', href: 'tel:+919606767809' },
                 { icon: MapPin, value: 'India (Remote-first)', href: '#' },
               ].map(({ icon: Icon, value, href }) => (
                 <a key={value} href={href} className="flex items-center gap-2 text-sm text-white/40 hover:text-white/70 transition-colors">
@@ -122,7 +122,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/25 text-center sm:text-left">
-            © {new Date().getFullYear()} Tuskr Black. All rights reserved. GST Registration: XXXXXXXXXXXX
+            © {new Date().getFullYear()} Tuskr Black. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <span className="text-xs text-white/20">

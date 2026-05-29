@@ -13,7 +13,7 @@ const channels = [
     icon: MessageCircle,
     label: 'WhatsApp Us Now',
     sublabel: 'Typically replies within minutes',
-    href: 'https://wa.me/919999999999?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20free%20consultation',
+    href: 'https://wa.me/919606767809?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20free%20consultation',
     style: 'bg-[#25D366] hover:bg-[#1ebe5d] text-white shadow-lg',
     iconColor: 'text-white',
     recommended: true,

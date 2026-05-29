@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Plus, Minus } from 'lucide-react'
 
@@ -114,7 +114,7 @@ export default function FAQ() {
           </h2>
           <p className="text-white/50 max-w-xl mx-auto">
             Everything you need to know about our services. Can't find what you're looking for?{' '}
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">
+            <a href="https://wa.me/919606767809" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">
               Chat with us on WhatsApp.
             </a>
           </p>

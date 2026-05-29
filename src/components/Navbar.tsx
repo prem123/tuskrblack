@@ -75,7 +75,7 @@ export default function Navbar() {
           {/* CTAs */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/919999999999?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20demo"
+              href="https://wa.me/919606767809?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20demo"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
@@ -128,7 +128,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
                 <a
-                  href="https://wa.me/919999999999?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20demo"
+                  href="https://wa.me/919606767809?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20book%20a%20demo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-3 text-gray-600 hover:text-gray-900 transition-colors font-medium"

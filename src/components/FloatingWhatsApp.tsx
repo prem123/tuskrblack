@@ -47,7 +47,7 @@ export default function FloatingWhatsApp() {
             {/* CTA */}
             <div className="p-3 bg-[#0d1117]">
               <a
-                href="https://wa.me/919999999999?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20know%20more%20about%20your%20services"
+                href="https://wa.me/919606767809?text=Hi%20Tuskr%20Black%2C%20I%20want%20to%20know%20more%20about%20your%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1ebe5d] transition-colors"

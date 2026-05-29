@@ -72,7 +72,7 @@ export default function Contact() {
 
             <div className="space-y-4">
               {[
-                { icon: MessageCircle, label: 'WhatsApp', value: '+91 99999 99999', href: 'https://wa.me/919999999999', color: 'text-green-400 bg-green-400/10' },
+                { icon: MessageCircle, label: 'WhatsApp', value: '+91 96067 67809', href: 'https://wa.me/919606767809', color: 'text-green-400 bg-green-400/10' },
                 { icon: Mail, label: 'Email', value: 'contact@tuskrblack.in', href: 'mailto:contact@tuskrblack.in', color: 'text-blue-400 bg-blue-400/10' },
                 { icon: MapPin, label: 'Location', value: 'India (Remote-first)', href: '#', color: 'text-purple-400 bg-purple-400/10' },
               ].map(({ icon: Icon, label, value, href, color }) => (
@@ -101,7 +101,7 @@ export default function Contact() {
                   ⭐ Recommended
                 </span>
                 <a
-                  href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20schedule%20a%20free%20consultation"
+                  href="https://wa.me/919606767809?text=Hi%2C%20I%20want%20to%20schedule%20a%20free%20consultation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3.5 rounded-2xl bg-[#25D366] text-white text-sm font-bold hover:bg-[#1ebe5d] transition-all shadow-lg"
