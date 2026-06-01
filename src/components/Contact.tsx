@@ -83,7 +83,7 @@ export default function Contact() {
               {[
                 { icon: MessageCircle, label: 'WhatsApp', value: '+91 96067 67809', href: 'https://wa.me/919606767809', color: 'text-green-400 bg-green-400/10' },
                 { icon: Mail, label: 'Email', value: 'contact@tuskrblack.in', href: 'mailto:contact@tuskrblack.in', color: 'text-blue-400 bg-blue-400/10' },
-                { icon: MapPin, label: 'Location', value: 'India (Remote-first)', href: '#', color: 'text-purple-400 bg-purple-400/10' },
+                { icon: MapPin, label: 'Location', value: '27, 1st Floor, Ramalinga Nagar, Near Janaki Nagar, HMS Colony 2nd Street, Theni Main Road, Madurai, Tamil Nadu – 625016', href: '#', color: 'text-purple-400 bg-purple-400/10' },
               ].map(({ icon: Icon, label, value, href, color }) => (
                 <a
                   key={label}

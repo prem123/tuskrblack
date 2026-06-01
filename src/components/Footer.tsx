@@ -55,7 +55,7 @@ export default function Footer() {
               {[
                 { icon: Mail, value: 'contact@tuskrblack.in', href: 'mailto:contact@tuskrblack.in' },
                 { icon: Phone, value: '+91 96067 67809', href: 'tel:+919606767809' },
-                { icon: MapPin, value: 'India (Remote-first)', href: '#' },
+                { icon: MapPin, value: '27, 1st Floor, Ramalinga Nagar, Near Janaki Nagar, HMS Colony 2nd Street, Theni Main Road, Madurai, Tamil Nadu – 625016', href: '#' },
               ].map(({ icon: Icon, value, href }) => (
                 <a key={value} href={href} className="flex items-center gap-2 text-sm text-white/40 hover:text-white/70 transition-colors">
                   <Icon size={13} className="text-brand-blue flex-shrink-0" />
