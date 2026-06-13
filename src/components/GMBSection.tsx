@@ -45,7 +45,7 @@ export default function GMBSection() {
   }, [])
 
   return (
-    <section id="gmb" className="py-24 bg-[#080808] relative overflow-hidden">
+    <section id="gmb" className="py-24 journey-dim relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none opacity-5">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full"

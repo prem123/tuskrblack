@@ -69,7 +69,7 @@ function Counter({ end, suffix }: { end: number; suffix: string }) {
 
 export default function WhyChoose() {
   return (
-    <section id="why" className="py-24 bg-[#080808] relative overflow-hidden">
+    <section id="why" className="py-24 journey-dim relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-5"

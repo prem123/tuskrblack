@@ -41,7 +41,7 @@ const plans = [
       'Broadcast campaigns (unlimited)',
       'Full GMB optimization & management',
       'Automated review collection',
-      'Meta + Google Ads (up to 5 campaigns)',
+      'Meta Ads (up to 5 campaigns)',
       'CRM integration (HubSpot / Zoho)',
       'Weekly performance report',
       'Shared team inbox (5 agents)',
@@ -65,7 +65,7 @@ const plans = [
       'Custom AI chatbot development',
       'White-label solutions',
       'Custom CRM & API integrations',
-      'Full-scale Meta + Google Ads',
+      'Full-scale Meta Ads',
       'Complete GMB management (all locations)',
       'Advanced review growth strategy',
       'Custom reporting dashboard',
@@ -82,7 +82,7 @@ export default function Pricing() {
   const [annual, setAnnual] = useState(false)
 
   return (
-    <section id="pricing" className="py-24 bg-[#080808] relative overflow-hidden">
+    <section id="pricing" className="py-24 journey-dim relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div

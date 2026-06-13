@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
@@ -16,9 +17,14 @@ import FloatingWhatsApp from './components/FloatingWhatsApp'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermsConditions'
 
+const JourneyScene = lazy(() => import('./components/JourneyScene'))
+
 function LandingPage() {
   return (
     <>
+      <Suspense fallback={null}>
+        <JourneyScene />
+      </Suspense>
       <Navbar />
       <main>
         <Hero />

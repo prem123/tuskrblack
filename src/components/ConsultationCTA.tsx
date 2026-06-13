@@ -43,8 +43,8 @@ const channels = [
 export default function ConsultationCTA() {
   return (
     <section id="consultation" className="py-28 relative overflow-hidden">
-      {/* Rich background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0d0d1a] via-[#050505] to-[#0a0515]" />
+      {/* Rich background — translucent so the 3D journey shows through */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0d0d1a]/60 via-[#050505]/55 to-[#0a0515]/60" />
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full opacity-10"
           style={{ background: 'radial-gradient(circle, #7C3AED, transparent)' }} />

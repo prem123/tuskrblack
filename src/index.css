@@ -56,6 +56,25 @@
     background-clip: text;
   }
 
+  /* Brand "Black" wordmark — true black fill with a bold, flashy glowing
+     white outline that pulses */
+  .brand-ink {
+    color: #000000;
+    -webkit-text-stroke: 1.3px #ffffff;
+    paint-order: stroke fill;
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.9),
+      0 0 16px rgba(167, 139, 250, 0.7),
+      0 0 30px rgba(59, 130, 246, 0.5);
+    animation: brandFlash 2.4s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .brand-ink {
+      animation: none;
+    }
+  }
+
   .gradient-text-white {
     background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
@@ -82,16 +101,38 @@
   }
 }
 
-/* Gradient backgrounds */
+/* Gradient backgrounds — kept translucent so the fixed 3D journey shows through */
 .hero-gradient {
-  background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.2) 0%, transparent 60%),
-              radial-gradient(ellipse at 100% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-              #0a0a0a;
+  background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.18) 0%, transparent 60%),
+              radial-gradient(ellipse at 100% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
 }
 
 .section-gradient {
-  background: radial-gradient(ellipse at 0% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 60%),
-              #050505;
+  background: radial-gradient(ellipse at 0% 50%, rgba(124, 58, 237, 0.12) 0%, transparent 60%),
+              rgba(5, 5, 7, 0.55);
+}
+
+/* Translucent dark panel for content sections over the 3D scene */
+.journey-dim {
+  background: rgba(6, 6, 9, 0.58);
+}
+
+/* Flashy pulsing glow for the brand "Black" outline */
+@keyframes brandFlash {
+  0%, 100% {
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.85);
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.85),
+      0 0 16px rgba(167, 139, 250, 0.6),
+      0 0 30px rgba(59, 130, 246, 0.45);
+  }
+  50% {
+    -webkit-text-stroke-color: #ffffff;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 1),
+      0 0 24px rgba(167, 139, 250, 0.95),
+      0 0 44px rgba(59, 130, 246, 0.75);
+  }
 }
 
 /* Animated gradient border */
